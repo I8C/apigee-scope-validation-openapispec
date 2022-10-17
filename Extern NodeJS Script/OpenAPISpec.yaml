@@ -1,0 +1,38 @@
+openapi: 3.0.3
+info:
+  title: Using this spec for creating api proxy with sub-resources
+  version: 1.0.0
+security:
+  - Scopes:
+      - Read
+      - Write
+      - Update
+      - Delete
+paths:
+  /resource-one/sub-resource-one:
+    get:
+      summary: GET verb for sub-resource-one
+      security:
+        - Scopes:
+            - Read
+    post:
+      summary: POST verb for sub-resource-one
+      security:
+        - Scopes:
+            - Write
+  /resource-one/sub-resource-two:
+    put:
+      summary: PUT verb for sub-resource-two
+      security:
+        - Scopes:
+            - Update
+            - Read
+            - Write
+    get:
+      summary: GET verb for sub-resource-two
+      security:
+        - Scopes:
+            - Read
+  /resource-one:
+    get:
+      summary: Main resource flow

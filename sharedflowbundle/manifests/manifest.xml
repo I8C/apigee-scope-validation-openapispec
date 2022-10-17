@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-Create-Local-Variable" version="SHA-512:ee8d5e8142248174adab38acd33d7427128b929a07aa4fbf5f1d7c1aff072c18bd8d46c972cd74500854898e99e5dfe05b77786ed11f41ab29724eacca123b2e"/>
+        <VersionInfo resourceName="JS-Scope-Checks" version="SHA-512:9df2c0a17288a4191e14323451fd4e724a1026403ff8823b7cdb03ea5446030e6c9a20ee2fad2af73163413b1f4f3f768ecbdf5bd2852b2b619a6b113217dfed"/>
+        <VersionInfo resourceName="KVM-Lookup-Scope-Mapping" version="SHA-512:33c5c5631ef98a722f52f75b35366e927f4cf43a3a7605f7b896eed87663200c31737c75c9e5e84d3038b9af5bc2d36b8885c8d9b6e1260d0c044e3b403862fa"/>
+        <VersionInfo resourceName="RF-Invalid-Scopes" version="SHA-512:3b261425b01333a3b978d8b7c21a0d31e670780f0786a5d5564b166b8bf0f99cfad1d2ad43d73997703973507c30b563d9d83400f1f0868e81cac73c57656014"/>
+        <VersionInfo resourceName="RF-KVM-Value-Missing" version="SHA-512:b954c2a4948349ef0e3edbb90f4bdb03cf3a650a365c82288d08bfdd7275c3789e971eb83120409e3e92ac1ccaa84172830f62273cdeb7adfa0b7ed2616fd030"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-Scope-Checks.js" version="SHA-512:0754247b32c449124646bad4b2f188810e5ebc113c044ad7618c822b6e1c8dbcca74e854be3d8b55063aefaddc576ec66b28a08f49f3d5397929705cb9609b31"/>
+    </Resources>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:0136c8306eb352b3f29dd970668a7ee9dad9eb4dcef053d4e6a308359db3808f94e8defe3607914903b457f8d3d8edb250db6fb7e2161041d2c233c2ac3f818e"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

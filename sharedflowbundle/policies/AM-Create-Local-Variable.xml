@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Create-Local-Variable">
+    <DisplayName>AM-Create-Local-Variable</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>SF-Lib-Scope-Validation.scopes</Name>
+        <Ref>in.SF-Lib-Scope-Validation.scopes</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>
