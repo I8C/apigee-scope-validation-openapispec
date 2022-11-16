@@ -2,37 +2,80 @@ openapi: 3.0.3
 info:
   title: Using this spec for creating api proxy with sub-resources
   version: 1.0.0
-security:
-  - Scopes:
-      - Read
-      - Write
-      - Update
-      - Delete
+components:
+  securitySchemes:
+    Scopes:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://example.com/oauth/authorize
+          tokenUrl: https://example.com/oauth/token
+          scopes:
+            Read: "Read"
+            Write: "Write"
+            Update: "Update"
+            Delete: "Delete"
+    
 paths:
-  /resource-one/sub-resource-one:
+  "/resource-one/sub-resource-one":
     get:
       summary: GET verb for sub-resource-one
       security:
-        - Scopes:
-            - Read
+      - Scopes:
+        - Read
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
     post:
       summary: POST verb for sub-resource-one
       security:
-        - Scopes:
-            - Write
-  /resource-one/sub-resource-two:
+      - Scopes:
+        - Write
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  "/resource-one/sub-resource-two":
     put:
       summary: PUT verb for sub-resource-two
       security:
-        - Scopes:
-            - Update
-            - Read
-            - Write
+      - Scopes:
+        - Update
+        - Read
+        - Write
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
     get:
       summary: GET verb for sub-resource-two
       security:
-        - Scopes:
-            - Read
-  /resource-one:
+      - Scopes:
+        - Read
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  "/resource-one":
     get:
       summary: Main resource flow
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
