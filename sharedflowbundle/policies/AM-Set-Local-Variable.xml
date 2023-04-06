@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Set-Local-Variable">
+    <DisplayName>AM-Set-Local-Variable</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>Scope-Validation-OpenAPISpec.token_scopes</Name>
+        <Ref>in.Scope-Validation-OpenAPISpec.token_scopes</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

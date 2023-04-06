@@ -5,9 +5,9 @@
     <FaultResponse>
         <Set>
             <Headers/>
-            <Payload contentType="application/problem+json">{ "title":  "Unauthorized", "status": "401", "detail": "Incorrect scopes provided." }</Payload>
-            <StatusCode>401</StatusCode>
-            <ReasonPhrase>Unauthorized</ReasonPhrase>
+            <Payload contentType="application/problem+json">{ "title":  "Forbidden", "status": "403", "detail": "Incorrect scopes provided." }</Payload>
+            <StatusCode>403</StatusCode>
+            <ReasonPhrase>Forbidden</ReasonPhrase>
         </Set>
     </FaultResponse>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-Lookup-Scope-Mapping" mapIdentifier="buildtime-scope-mapping">
-    <DisplayName>KVM-Lookup-Scope-Mapping</DisplayName>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-LookUp-Scope-Mapping" mapIdentifier="apigee-scope-validation-openapi">
+    <DisplayName>KVM-LookUp-Scope-Mapping</DisplayName>
     <Properties/>
     <ExclusiveCache>false</ExclusiveCache>
     <ExpiryTimeInSecs>300</ExpiryTimeInSecs>
-    <Get assignTo="SF-Lib-Scope-Validation.scope-mapping">
+    <Get assignTo="Scope-Validation-OpenAPISpec.scope_mapping">
         <Key>
             <Parameter ref="apiproxy.name"/>
         </Key>

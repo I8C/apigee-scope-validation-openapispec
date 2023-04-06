@@ -5,7 +5,7 @@
     <FaultResponse>
         <Set>
             <Headers/>
-            <Payload contentType="application/problem+json">{ "title":  "Internal Server Error", "status": "500", "detail": "Empty KVM value." }</Payload>
+            <Payload contentType="application/problem+json">{ "title":  "Internal Server Error", "status": "500", "detail": "KeyValueMap entry is missing or empty." }</Payload>
             <StatusCode>500</StatusCode>
             <ReasonPhrase>Internal Server Error</ReasonPhrase>
         </Set>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <SharedFlow name="default">
     <Step>
-        <Name>AM-Create-Local-Variable</Name>
+        <Name>AM-Set-Local-Variable</Name>
     </Step>
     <Step>
-        <Name>KVM-Lookup-Scope-Mapping</Name>
+        <Name>KVM-LookUp-Scope-Mapping</Name>
     </Step>
     <Step>
         <Name>RF-KVM-Value-Missing</Name>
-        <Condition>(SF-Lib-Scope-Validation.scope-mapping == null) or (SF-Lib-Scope-Validation.scope-mapping == "")</Condition>
+        <Condition>(Scope-Validation-OpenAPISpec.scope_mapping == null) or (Scope-Validation-OpenAPISpec.scope_mapping == "")</Condition>
     </Step>
     <Step>
-        <Name>JS-Scope-Checks</Name>
+        <Name>JS-Scope-Validation</Name>
     </Step>
     <Step>
         <Name>RF-Invalid-Scopes</Name>
-        <Condition>(SF-Lib-Scope-Validation.valid == false)</Condition>
+        <Condition>Scope-Validation-OpenAPISpec.valid_scopes == false</Condition>
     </Step>
 </SharedFlow>
